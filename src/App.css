@@ -1,0 +1,384 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* App layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-right: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Projects Page Cards */
+.project-category {
+  margin-bottom: 2rem;
+}
+
+.project-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-category li {
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid #667eea;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.project-category li:hover {
+  background-color: #e8e8e8;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  nav a {
+    margin-bottom: 1rem;
+  }
+}
+/* -----------------------------
+   Harmonious Color Theme Setup
+------------------------------ */
+
+:root {
+  /* Primary Gradient (Purple/Blue) */
+  --primary-gradient-start: #667eea;   /* Light purple/blue */
+  --primary-gradient-end: #764ba2;     /* Deeper purple */
+
+  /* Accent Gradient (Pink) */
+  --accent-gradient-start: #3b82f6; /* Bright azure blue */
+  --accent-gradient-end:   #06b6d4; /* Turquoise-leaning blue */
+    
+  --text-color: #333;                 /* Base text color */
+  --subtext-color: #555;              /* Secondary text color */
+  --background-light: #f8fafc;        /* Light background */
+  --background-lighter: #ffffff;      /* Lighter background */
+  --border-color: #e0e0e0;            /* Subtle border color */
+}
+
+/* -------------- Hero Section -------------- */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background: linear-gradient(
+    135deg,
+    var(--background-light) 0%,
+    var(--background-lighter) 100%
+  );
+  border-bottom: 2px solid var(--border-color);
+}
+
+/* Content Container */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 2rem;
+}
+.greeting{
+  text:var(--text-color);
+  font-weight: 1000;
+  font-size: 45px;
+
+
+}
+/* Name Highlight - pink gradient text effect */
+.name-highlight {
+  background: linear-gradient(
+    to right,
+    var(--accent-gradient-start),
+    var(--accent-gradient-end)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Description text */
+.hero-description {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--subtext-color);
+  line-height: 1.6;
+}
+
+/* Role Highlight - purple gradient text effect */
+.role-highlight {
+  background: linear-gradient(
+    to right,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* Short description styling */
+.short-description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--subtext-color);
+  line-height: 1.6;
+}
+
+/* Call-to-Action Button (using primary purple gradient) */
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: var(--primary-gradient-start);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-gradient-end);
+}
+
+/* Image Container */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------- Responsive Adjustments -------------- */
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}
+
+/* Projects Section with Refined Aesthetics */
+.projects-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+/* Tab Navigation */
+.tabs {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  padding: 0.8rem 1.8rem;
+  margin: 0 0.5rem;
+  border: none;
+  background: #e0e0e0;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Project Card Styles */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Hover Overlay */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.project-overlay p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
