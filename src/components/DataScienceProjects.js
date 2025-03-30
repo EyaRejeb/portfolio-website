@@ -52,7 +52,7 @@ function DataScienceProjects() {
 
   return (
     <div className="ds-gallery">
-      <h2 className="ds-gallery-title">Data Science Projects</h2>
+      <h2 className="ds-gallery-title">Data Analysis Projects</h2>
       <p className="ds-gallery-subtitle">
         A selection of projects showcasing data-driven insights and predictive analytics.
       </p>
