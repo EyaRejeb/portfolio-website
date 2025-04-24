@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DesignProjects from './DesignProjects';
 import DataScienceProjects from './DataScienceProjects';
+import WebProjects from "./WebProjects";
 // You can add a similar component for Web projects if needed.
 // import WebProjects from './WebProjects';
 
@@ -34,12 +35,7 @@ function Projects() {
 
       {/* Conditional Rendering Based on Active Tab */}
       {activeTab === 'design' && <DesignProjects />}
-      {activeTab === 'web' && (
-        // Replace this with your Web projects component when available
-        <div style={{ textAlign: 'center', padding: '2rem', color: '#777' }}>
-          Web Projects Coming Soon!
-        </div>
-      )}
+      {activeTab === 'web' && <WebProjects />}
       {activeTab === 'data' && <DataScienceProjects />}
     </section>
   );
