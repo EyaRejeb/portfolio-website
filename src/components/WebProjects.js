@@ -30,15 +30,15 @@ function WebProjects() {
             alt: 'Restaurant App',
             title: 'Restaurant System',
             description: 'A full-stack reservation & menu management app; browse menus, book tables, and manage orders in real time.',
-            link: 'https://your-restaurant-app.example.com'
+            link: 'https://github.com/EyaRejeb/Restaurant'
         },
         {
             id: 4,
             src: techweb,
-            alt: 'Latechcom Tech Community Website',
-            title: 'Latechcom Tech Community',
+            alt: 'Tech Website',
+            title: 'Web Tech Community',
             description: 'A community portal offering free mentorship, software dev & product design programs, and an interactive registration flow.',
-            link: 'https://your-latechcom-site.example.com'
+            link: 'https://github.com/EyaRejeb/tech-website'
         }
     ];
 
@@ -69,4 +69,4 @@ function WebProjects() {
     );
 }
 
-export default WebProjects;
+export default WebProjects
