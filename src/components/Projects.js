@@ -29,7 +29,7 @@ function Projects() {
           className={activeTab === 'data' ? 'active' : ''}
           onClick={() => setActiveTab('data')}
         >
-          Data Science
+          Data Analysis
         </button>
       </div>
 
