@@ -39,6 +39,7 @@ function Projects() {
       {activeTab === 'data' && <DataScienceProjects />}
     </section>
   );
+
 }
 
 export default Projects;
