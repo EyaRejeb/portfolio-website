@@ -17,7 +17,7 @@ function Home() {
           My passion is blending art and technology to deliver outstanding results.
         </p>
         {/* The button is now an anchor that downloads the CV */}
-        <a className="cta-button" href={cvFile} download>
+        <a className="cta-button" href={#} download>
           download my CV
         </a>
         <div className="social-icons">
