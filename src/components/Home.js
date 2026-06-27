@@ -1,8 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaFacebook, FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 import Typewriter from './Typewriter';
-import heroImage from '../assets/Eya_Rejeb.jpeg'; // Ensure your image is in src/assets
-import cvFile from '../assets/REJEB_Eya_CV.pdf';   // Place your CV PDF in src/assets
 
 function Home() {
   return (
