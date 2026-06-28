@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaInstagram, FaFacebook, FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 import Typewriter from './Typewriter';
+import heroImage from '../assets/Eya_Rejeb.jpeg'; // Ensure your image is in src/assets
+ {/*import cvFile from '../assets/REJEB_Eya_CV.pdf';   // Place your CV PDF in src/assets */}
 
 function Home() {
   return (
@@ -16,10 +18,10 @@ function Home() {
           I’m a creative professional who designs, develops, and analyzes data to create innovative solutions.
           My passion is blending art and technology to deliver outstanding results.
         </p>
-         {/* The button is now an anchor that downloads the CV */}
-         {/*<a className="cta-button" href={#} download> */}
-         {/*  download my CV */}
-         {/*</a> */}
+        {/* The button is now an anchor that downloads the CV */}
+        <a className="cta-button" href={cvFile} download>
+          download my CV
+        </a>
         <div className="social-icons">
           <a href="https://www.instagram.com/eyarejeb02/" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
