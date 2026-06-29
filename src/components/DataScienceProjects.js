@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../DataScienceProjects.css';
 
 // Sample image imports – replace these with your actual project images or visualizations.
-import hospital from '../assets/hospital.png';
+//import hospital from '../assets/hospital.png';
 import hospitalAdvanced from '../assets/hospitalAdvanced.png';
 import marathon from '../assets/marathon.png';
 import mnist from '../assets/mnist.png';
